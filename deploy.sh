@@ -5,7 +5,7 @@
 body='{
 "request": {
     "message": "Update docs (triggered by Fiona2013/Fiona2013.github.io:docs).",
-    "branch":"hexo-theme-next"
+    "branch":"hexo-theme-annie"
   }
 }'
 
