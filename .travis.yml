@@ -1,0 +1,40 @@
+language: node_js
+node_js:
+    - '8'
+cache:
+  apt: true
+  directories:
+  - node_modules
+addons:
+  apt:
+    sources:
+        - ubuntu-toolchain-r-test
+    packages:
+        - g++-4.8
+  ssh_known_hosts: github.com
+env:
+- CXX=g++-4.8
+before_install:
+  - git config --global user.name "fiona"
+  - git config --global user.email "ifangyan88@gmail.com"
+  - git config --global push.default simple
+script:
+  - git clone -b master --single-branch https://${GH_TOKEN}@github.com/Fiona2013/Fiona2013.github.io.git --depth 1 .deploy_git -v
+  - git remote add -f docs https://${GH_TOKEN}@github.com/Fiona2013/Fiona2013.github.io.git
+  - git fetch docs
+  - git reset --hard
+  - git subtree add --prefix=source/_posts docs docs --squash
+  - yarn install
+  - curl https://codeload.github.com/yzzting/hexo-theme-MyFairLady/zip/master -o themes/MyFairLady.tar.gz && tar zxvf themes/MyFairLady.tar.gz -C themes/
+  - mv themes/hexo-theme-MyFairLady-* themes/MyFairLady &&  mv themes/_config.yml themes/MyFairLady/_config.yml
+  
+after_script:
+  - hexo generate
+  - cp -r public/* .deploy_git/
+  - cd .deploy_git
+  - git add -A
+  - git commit -am "Auto deploy from Travis-CI."
+  - git push --force
+branches:
+  only:
+    - hexo-theme-annie
