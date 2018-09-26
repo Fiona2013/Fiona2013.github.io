@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Head tag -->
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  
+  <title>使用 Markdown 和 Hexo 写文章的贴士 - Fiona&#39;s blog</title>
+
+  <!--Favicon-->
+  <link rel="icon" href="favicon/favicon.ico">
+
+  <!--Description-->
+  
+      <meta name="description" content="UI Designer">
+  
+
+  <!--Author-->
+  
+      <meta name="author" content="fiona">
+  
+
+  <!-- Pure CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Open+Sans:300,800" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/css/styles.css">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Google Analytics -->
+  
+
+</head>
+
+
+  <body>
+  	<div class="container-fluid navbar-container m-sm-5">
+      <!-- Header -->
+      <nav class="navbar navbar-toggleable-sm navbar-light px-1 py-3 my-3 mb-sm-5">
+  <a class="navbar-brand ml-2" href="/">Fiona's blog</a>
+  <button class="navbar-toggler navbar-toggler-right py-2" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse text-center" id="navbarCollapse">
+    <ul class="navbar-nav ml-auto my-auto">
+      
+    </ul>
+    <hr class="hidden-md-up" />
+  </div>
+</nav>
+
+
+  		<div class="row">
+  			<div class="col-12 mb-4">
+  <img class="img-fluid project-img" src="/images/unsplash.jpg" alt="使用 Markdown 和 Hexo 写文章的贴士">
+</div>
+<div class="col-lg-4 col-12 pt-3 px-4 pr-lg-5">
+  <h1>使用 Markdown 和 Hexo 写文章的贴士</h1>
+</div>
+<div class="col-lg-8 col-12 pt-lg-3 mb-4 pl-lg-5 px-lg-0 px-4 portfolio-content">
+  <h2 id="Markdown-基本语法"><a href="#Markdown-基本语法" class="headerlink" title="Markdown 基本语法"></a>Markdown 基本语法</h2><h3 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h3><p>标题用 <code>#</code> 表示，一级标题用一个，二级用两个，以此类推</p>
+<h3 id="加粗"><a href="#加粗" class="headerlink" title="加粗"></a>加粗</h3><p><strong>加粗</strong> 用双星号包围所要加粗的内容。</p>
+<h3 id="斜体"><a href="#斜体" class="headerlink" title="斜体"></a>斜体</h3><p><em>斜体</em> 用单星号包围所要斜体的内容。</p>
+<h3 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h3><p>图片需要使用图片链接。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![](https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1537527546424&amp;di=2485aa3b96243f5f5e71f25641c9a5a2&amp;imgtype=jpg&amp;src=http%3A%2F%2Fimg0.imgtn.bdimg.com%2Fit%2Fu%3D3564877025%2C796183547%26fm%3D214%26gp%3D0.jpg)</span><br></pre></td></tr></table></figure></p>
+<p>则会显示图片<br><img src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1537527546424&amp;di=2485aa3b96243f5f5e71f25641c9a5a2&amp;imgtype=jpg&amp;src=http%3A%2F%2Fimg0.imgtn.bdimg.com%2Fit%2Fu%3D3564877025%2C796183547%26fm%3D214%26gp%3D0.jpg" alt=""></p>
+<p>注意，Hexo 的图片存储在 themes 的 img 目录下，需要先 deploy 到 GitHub 上，在得到图片，否则显示不出来。（这个有问题，可以再说。）</p>
+<p>其他语法可以参见 <a href="https://coding.net/help/doc/project/markdown.html" target="_blank" rel="noopener">https://coding.net/help/doc/project/markdown.html</a></p>
+<h2 id="Hexo-使用说明"><a href="#Hexo-使用说明" class="headerlink" title="Hexo 使用说明"></a>Hexo 使用说明</h2><h3 id="项目根目录"><a href="#项目根目录" class="headerlink" title="项目根目录"></a>项目根目录</h3><p>项目根目录是存放源码 /Fiona2013BlogRepo 的目录<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">xxxx/Fiona2013BlogRepo</span><br></pre></td></tr></table></figure></p>
+<h3 id="文章编写目录"><a href="#文章编写目录" class="headerlink" title="文章编写目录"></a>文章编写目录</h3><p>文章编写的目录在根目录的 <code>/source/_posts</code> 下，在这个目录下创建 <code>*.md</code> 文件并编辑文件即可（不会 markdown 也没关系，直接写也能生成网页）。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">xxxx/Fiona2013BlogRepo/source/_posts</span><br></pre></td></tr></table></figure></p>
+<h3 id="图片存储目录"><a href="#图片存储目录" class="headerlink" title="图片存储目录"></a>图片存储目录</h3><h4 id="背景图存储目录"><a href="#背景图存储目录" class="headerlink" title="背景图存储目录"></a>背景图存储目录</h4><p>由于这个 Annie 主题代码里写死了，必须在主题的 <code>Annie/source/img/random</code> 这个目录下查找图片，所以，必须要把想显示的图片存在这个里面。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">xxxx/Fiona2013BlogRepo/themes/Annie/source/img/random</span><br></pre></td></tr></table></figure></p>
+<p>并且要注意修改代码，把图片总数修改为 random 目录下的图片数量。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">xxxxxx/Fiona2013BlogRepo/public/js/main.js:</span><br><span class="line">   74    //generate a random img that pre_name &apos;from 0 to 110&apos;</span><br><span class="line">   75    var random_bg = Math.floor(Math.random() * 109 + 1);</span><br><span class="line">   76:   //var bg = &apos;url(/img/random/&apos; + random_bg + &apos;.jpg)&apos;;</span><br><span class="line">   77:   var bg = &apos;url(/img/random/&apos; + random_bg + &apos;.jpg)&apos;;</span><br><span class="line">   78    $(&quot;header&quot;).css(&quot;background-image&quot;, bg);</span><br><span class="line">   79   &#125;;</span><br><span class="line"></span><br><span class="line">xxxxxx/Fiona2013BlogRepo/themes/Annie/source/js/main.js:</span><br><span class="line">   74    //generate a random img that pre_name &apos;from 0 to 110&apos;</span><br><span class="line">   75    var random_bg = Math.floor(Math.random() * 109 + 1);</span><br><span class="line">   76:   //var bg = &apos;url(/img/random/&apos; + random_bg + &apos;.jpg)&apos;;</span><br><span class="line">   77:   var bg = &apos;url(/img/random/&apos; + random_bg + &apos;.jpg)&apos;;</span><br><span class="line">   78    $(&quot;header&quot;).css(&quot;background-image&quot;, bg);</span><br><span class="line">   79   &#125;;</span><br></pre></td></tr></table></figure>
+<h2 id="部署与安装"><a href="#部署与安装" class="headerlink" title="部署与安装"></a>部署与安装</h2><h3 id="安装-Node"><a href="#安装-Node" class="headerlink" title="安装 Node"></a>安装 Node</h3><p>到 <a href="https://nodejs.org/zh-cn/" target="_blank" rel="noopener">https://nodejs.org/zh-cn/</a> 官网下载并安装 Node 和 npm</p>
+<h3 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h3><p><a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">https://hexo.io/zh-cn/docs/</a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure></p>
+<h3 id="本地运行"><a href="#本地运行" class="headerlink" title="本地运行"></a>本地运行</h3><p>在项目根目录有 <code>deploy.sh</code> 文件，在 terminal 中执行如下命令行，就可以在本地开启一个 Web 服务，访问 <a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a> 就可以看到博客的网页效果呢。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sh deploy.sh</span><br></pre></td></tr></table></figure></p>
+<h3 id="部署到-GitHub"><a href="#部署到-GitHub" class="headerlink" title="部署到 GitHub"></a>部署到 GitHub</h3><p>执行如下命令行<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo deploy</span><br></pre></td></tr></table></figure></p>
+<p>在没有配置 SSH Key 的情况下，可能需要输入 GitHub 账号和密码。</p>
+
+</div>
+
+
+      </div>
+      
+  	</div>
+
+    <!-- After footer scripts -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+  </body>
+</html>
