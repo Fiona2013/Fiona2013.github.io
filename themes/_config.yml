@@ -1,46 +1,6 @@
-#title
-title: Fiona
-# Header
-menu:
-    Home : /
-    About : /about
-    Tags : /tags
-    Archives : /archives
-# title
-header:
-    aboutHeader: Chat
-    aboutInformation: Social
-    aboutFriendlink: Talent
+# Google Analytics Tracking ID
+google_analytics:
 
-# author chat
-chat: 如果你给我一个肯定的眼神，我就会奋不顾身的冲向你
-
-# SubNav
-subnav:
-  gitHub: "https://github.com/Fiona2013"
-  Medium: "https://www.pinterest.com/ifangyan88/"
-
-# friendlink
-# friendlink:
-#     ahonn的博客: http://www.ahonn.me
-#     刘帆帆的博客: http://henbukexue.science
-# read more
-excerpt_link: ...continue reading
-
-# favicon
-favicon: http://7xp1k3.com1.z0.glb.clouddn.com/octocat-de-los-muertos.jpg
-
-# Baidu Analytics
-baidu_analytics: c21994907883f37ffd80e13627dd4faa
-
-# Google Analytics
-# google_analytics: UA-75314797-1
-
-# comments
-# disqus: yzzting
-# duoshuo: yzzting
-
-# photo link
-aboutPhoto: http://7xp1k3.com1.z0.glb.clouddn.com/156_1.jpg
-tagPhoto: http://7xp1k3.com1.z0.glb.clouddn.com/83_1.jpg
-archivePhoto: http://7xp1k3.com1.z0.glb.clouddn.com/208_1.jpg
+# Default portfolio post
+default_cover_image: images/unsplash.jpg
+default_post_title: Portfolio Item
