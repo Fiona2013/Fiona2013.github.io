@@ -1,11 +1,11 @@
 #!/bin/bash
-# haolianluo.github.io builder.
-# @author zacksleo <zacksleo@gmail.com>
+# Fiona2013.github.io builder.
+# @author fiona <ifangyan88@gmail.com>
 #
 body='{
 "request": {
     "message": "Update docs (triggered by Fiona2013/Fiona2013.github.io:docs).",
-    "branch":"hexo-theme-annie"
+    "branch":"hexo-theme-"${THEME}"
   }
 }'
 
