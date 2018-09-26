@@ -25,9 +25,9 @@ script:
   - git reset --hard
   - git subtree add --prefix=source/_posts docs docs --squash
   - yarn install
-  - curl https://codeload.github.com/yzzting/hexo-theme-MyFairLady/tar.gz/master -o themes/MyFairLady.tar.gz && tar zxvf themes/MyFairLady.tar.gz -C themes/
-  - mv themes/hexo-theme-MyFairLady-* themes/MyFairLady &&  mv themes/_config.yml themes/MyFairLady/_config.yml && rm -f themes/MyFairLady/source/CNAME
-  
+  - curl https://codeload.github.com/sharvaridesai/hexo-theme-edinburgh/tar.gz/master -o themes/edinburgh.tar.gz && tar zxvf themes/edinburgh.tar.gz -C themes/
+  - mv themes/hexo-theme-edinburgh-* themes/edinburgh &&  mv themes/_config.yml themes/edinburgh/_config.yml
+
 after_script:
   - hexo generate
   - cp -r public/* .deploy_git/
@@ -37,4 +37,4 @@ after_script:
   - git push --force
 branches:
   only:
-    - hexo-theme-annie
+    - hexo-theme-edinburgh
